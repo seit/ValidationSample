@@ -14,11 +14,7 @@ public class InputForm {
     @NotBlank(groups = {AlphaGroup.class, BetaGroup.class}, message = "text1を入力してください")
     String text1;
 
-//    @NotBlank(groups = {AlphaGroup.class}, message = "text2を入力してください")
     String text2;
-//
-//    @NotBlank(groups = {AlphaGroup.class}, message = "text3を入力してください")
-//    String text3;
 
     @Valid
     @MailAddressFormat(groups = {BetaGroup.class})

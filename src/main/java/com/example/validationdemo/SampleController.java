@@ -29,6 +29,7 @@ public class SampleController {
             }
 
             model.addAttribute("message", msg);
+            return "sample/hoge";
         }
 
         return "sample/result";
