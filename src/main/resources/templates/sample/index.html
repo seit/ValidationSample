@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
-      xmlns:form="http://www.w3.org/1999/xhtml">
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head></head>
 
 <body th:object="${inputForm}">
@@ -14,12 +13,8 @@
     <form  method="post" th:action="@{/input}" >
         <p>text1</p>
         <input path="text1" type="text" th:field="*{text1}"/>
-        <erros path="text1"/>
         <p>text2</p>
         <input path="text2" type="text" th:field="*{text2}"/>
-        <erros path="text2"/>
-        <!--<p>text3</p>-->
-        <!--<input type="text" th:field="*{text3}"/>-->
 
         <p>メールアドレス</p>
         <input type="text" th:field="*{mailAddress.text}"/>
